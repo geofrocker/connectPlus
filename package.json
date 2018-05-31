@@ -1,0 +1,39 @@
+{
+  "name": "weconnect",
+  "version": "1.0.0",
+  "description": "We connect app",
+  "main": "./api/server.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest -u",
+    "start": "cross-env NODE_ENV=development npm run nodemon",
+    "nodemon": "nodemon start",
+    "production": "cross-env NODE_ENV=production npm run nodemon"
+  },
+  "author": "Geofrey Asiimwe",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-routes-mapper": "^1.0.1",
+    "helmet": "^3.12.0",
+    "jsonwebtoken": "^8.2.0",
+    "mongoose": "^5.0.7",
+    "mongoose-paginate": "^5.0.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "cross-env": "^5.1.4",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "jest": "^22.4.3",
+    "superagent": "^3.8.2",
+    "supertest": "^3.0.0"
+  }
+}
